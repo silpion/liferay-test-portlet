@@ -4,7 +4,7 @@
 	<portlet>
 		<portlet-name>test-portlet</portlet-name>
 		<display-name>test-portlet</display-name>
-		<portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
+		<portlet-class>de.silpion.liferay.portlet.test.TestMVCPortlet</portlet-class>
 		<init-param>
 			<name>view-jsp</name>
 			<value>/view.jsp</value>
