@@ -16,8 +16,8 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
 
-        <liferay.version>6.2.10-GA1</liferay.version>
-        <liferay.maven.plugin.version>6.2.0-RC5</liferay.maven.plugin.version>
+        <liferay.version>6.2.1</liferay.version>
+        <liferay.maven.plugin.version>6.2.10.6</liferay.maven.plugin.version>
 
     </properties>
 
@@ -82,6 +82,15 @@
                         </requireProperty>
                     </rules>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>check-auto-deploy-dir-var</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <phase>validate</phase>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
