@@ -82,6 +82,15 @@
                         </requireProperty>
                     </rules>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>check-auto-deploy-dir-var</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <phase>validate</phase>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
